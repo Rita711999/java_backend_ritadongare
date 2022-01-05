@@ -1,8 +1,10 @@
 generic\NormalBox.class
 oop\Tiger.class
+collections\CollectionDemo.class
 generic\GenericBox.class
 oop\GpsListener.class
 oop\Animal.class
+collections\CollectionDemo$1.class
 ClassObj\Bmw.class
 ClassObj\Car.class
 exception\NumDivider.class
