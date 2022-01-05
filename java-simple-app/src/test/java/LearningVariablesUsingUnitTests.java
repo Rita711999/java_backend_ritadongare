@@ -8,7 +8,7 @@
         @Test  //this annotation
         void learnTheVariablesValidCase(){
             int osNum=12;
-            int ExpectedValue=12;
+            int expectedValue=12;
             Assertions.assertEquals(expectedValue, osNum);
         }
     @DisplayName("Check variable values are incorrect")

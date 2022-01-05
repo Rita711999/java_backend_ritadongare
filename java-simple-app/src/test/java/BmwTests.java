@@ -1,7 +1,6 @@
 import ClassObj.Bmw;
 import ClassObj.Car;
-import clsobj.Bmw;
-import clsobj.Car;
+import ClassObj.Bmw;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;

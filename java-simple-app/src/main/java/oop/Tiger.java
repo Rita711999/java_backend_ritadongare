@@ -6,4 +6,7 @@ public class Tiger extends Animal{
         System.out.println("tiger is walking");
         return null;
     }
+
+    public void checkLocation() {
+    }
 }
