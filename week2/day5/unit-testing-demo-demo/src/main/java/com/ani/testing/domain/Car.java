@@ -1,5 +1,7 @@
 package com.ani.testing.domain;
+
 import java.sql.Date;
+
 public class Car {
     private Long id;
     private String model;

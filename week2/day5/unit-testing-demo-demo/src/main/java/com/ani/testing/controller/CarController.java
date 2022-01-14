@@ -1,10 +1,9 @@
 package com.ani.testing.controller;
+
 import com.ani.testing.domain.Car;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.sql.Date;
 import java.time.LocalDate;
@@ -12,6 +11,7 @@ import java.time.LocalDate;
 @RequestMapping("/car")
 @RestController
 public class CarController {
+
     @GetMapping
     public ResponseEntity<Car> getCar() {
         var car = new Car();
@@ -20,5 +20,16 @@ public class CarController {
         car.setModel("abc");
         car.setMfg(Date.valueOf(LocalDate.now()));
         return ResponseEntity.ok(car);
+    }
+
+    @GetMapping("/{id}")
+    public ResponseEntity<Integer> getCarById(@PathVariable Long id)  {
+
+        return ResponseEntity.ok(100);
+    }
+
+    @PostMapping
+    public ResponseEntity<Car> saveCar(@RequestBody Car car) {
+        return new ResponseEntity<>(car, HttpStatus.CREATED);
     }
 }
